@@ -8,9 +8,9 @@ if ARGV.length == 4 and /--amount/.match(ARGV[0]) and /--tip/.match(ARGV[2])
 else
   puts "Please provide amount:"
   amount = gets.split(" ").first
-  currency = gets.split(" ").last || nil
+  currency = gets.split(" ").last
   puts "Please provide tip:"
-  tip_percentage = Float(gets) || 15
+  tip_percentage = (Float(gets) ||= 15)
 end
 
 if tip_percentage.to_f < 0 or amount.to_f < 0
