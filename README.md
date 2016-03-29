@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Write calculate or calculate --amount float1 --tip float2   where float1 and float2 are the amount and the tip in percentage that you want to calculate.  
 
 ## Development
 
